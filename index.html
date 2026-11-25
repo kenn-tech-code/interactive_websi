@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday, My Love! 🎂💖</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <!-- Linked External CSS File -->
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+</head>
+<body>
+  <!-- Cute Dreamy Background Elements -->
+  <div class="bg-decorations">
+    <div class="cloud cloud-1">☁️</div>
+    <div class="cloud cloud-2">☁️</div>
+    <div class="cloud cloud-3">☁️</div>
+    <div class="floating-bg" id="floatingBg"></div>
+  </div>
+
+  <!-- Music Box Toggle -->
+  <button class="music-btn" id="musicBtn" onclick="toggleMusic()">
+    🎵 Play Birthday Melody
+  </button>
+
+  <main class="container">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="ribbon-top">🎀 ✨ 🎀</div>
+      <div class="badge">✨ Today is all about my favorite person ✨</div>
+      <h1>Happy Birthday, My Love! 🎂💖</h1>
+      <p>
+        To the prettiest, sweetest, and most amazing girlfriend in the world—thank you
+        for making every single day brighter just by being you.
+      </p>
+      <button class="btn-primary" onclick="launchConfetti()">
+        Tap for Birthday Surprise 🎉
+      </button>
+    </section>
+
+    <!-- Polaroid Photo Gallery (All 8 of your pics included!) -->
+    <section class="gallery-section">
+      <h2 class="section-title">Our Cutest Memories 📸</h2>
+      <p class="section-subtitle">Every moment with you is my favorite memory 💕</p>
+
+      <div class="polaroid-grid">
+        <div class="polaroid">
+          <img src="05e1876c-a00b-47f2-9334-65722645769a.jpeg" alt="Photobooth Strip" />
+          <div class="polaroid-caption">Our cutest photobooth strip 🥰📸</div>
+        </div>
+
+        <div class="polaroid">
+          <img src="28e74bc2-52c6-42a2-9ef2-9543548e002c.jpeg" alt="Golden Hour Selfie" />
+          <div class="polaroid-caption">Golden hour hits different when I'm with you ✨</div>
+        </div>
+
+        <div class="polaroid">
+          <img src="9821456d-9a65-4e2c-a39d-73a421bc77c6.jpeg" alt="Date Night" />
+          <div class="polaroid-caption">Look how pretty my baby is 😍💖</div>
+        </div>
+
+        <div class="polaroid">
+          <img src="c83d3575-921a-4ce3-b583-61e6681d0792.jpeg" alt="Cute Collage" />
+          <div class="polaroid-caption">Four frames of pure cuteness overload 🌸</div>
+        </div>
+
+        <div class="polaroid">
+          <img src="e71aa76b-bcc5-4b19-b08f-ed3791740263.jpeg" alt="Peace Sign Selfie" />
+          <div class="polaroid-caption">My forever comfort person ✌️💕</div>
+        </div>
+
+        <div class="polaroid">
+          <img src="f6d56b0b-8c38-4651-be42-93ffc382c6f0.jpeg" alt="Silly Tongue Out" />
+          <div class="polaroid-caption">Kulitan moments I wouldn't trade for anything 😜</div>
+        </div>
+
+        <div class="polaroid">
+          <img src="f89c8e00-bfd6-4a9f-9bb4-53550ea5c922.jpeg" alt="OOTD Shot" />
+          <div class="polaroid-caption">Serving looks as always, my gorgeous girl 💃🎀</div>
+        </div>
+
+        <div class="polaroid">
+          <img src="backhug.jpeg" alt="Back Hug" />
+          <div class="polaroid-caption">My safest place in the whole world 🫂❤️</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Love Letter Section -->
+    <section class="letter-section">
+      <h2 class="section-title">A Special Letter For You 💌</h2>
+      <p class="section-subtitle">Click the envelope below to open my birthday message</p>
+
+      <div class="envelope-wrapper">
+        <div class="envelope-card" onclick="toggleLetter()">
+          <div class="wax-seal">💝</div>
+          <h3 id="envelopeTitle">Tap to Open Your Birthday Letter</h3>
+          <p id="envelopeHint">Made with all my love just for you ✨</p>
+        </div>
+
+        <div class="letter-paper" id="letterPaper">
+          <div class="letter-header">Happy Birthday, Baby! 🌷💖</div>
+          <div class="letter-body">
+            <p>
+              Happy, happy birthday sa pinakamaganda, pinaka-cute, at pinakamamahal kong
+              girlfriend! 🎉💕 Sobrang thankful ako kay Lord kasi binigay Niya ikaw sa
+              buhay ko. Simula nang dumating ka, mas naging makulay, mas masaya, at mas
+              may direction yung araw-araw ko. You deserve all the love, happiness, at
+              lahat ng magagandang bagay sa mundo today and always.
+            </p>
+            <p>
+              Alam mo ba, minsan iniisip ko kung anong ginawa kong tama para magkaroon ng
+              girlfriend na kasing ganda at kasing bait mo—siguro nung past life ko, ako
+              yung nagbabalik ng ballpen na nahulog sa classroom. At kahit minsan topakin
+              ka o gutom ka na parang nagiging final boss, mahal na mahal pa rin kita…
+              basta pakakainin muna kita bago tayo mag-usap para safe ako!
+              <span class="laugh-line">HAHAHAHAHAHAHAHAH</span>
+            </p>
+            <p>
+              Seryoso na baby, sobrang proud ako sa lahat ng ginagawa mo at nandito lang
+              ako palagi para suportahan ka, alagaan ka, at mahalin ka nang buong-buo.
+              Enjoy your special day, my love!
+            </p>
+
+            <div class="part-two-box">
+              💌 P.S. May Part 2 pa itong letter na 'to… ibibigay ko sa'yo nang personal
+              pag nag-date na tayo! Can't wait to celebrate with you in person, baby! 🥰🌹
+            </div>
+          </div>
+          <div class="letter-signoff">Forever yours, Your Boyfriend ❤️</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Virtual Kisses Counter -->
+    <section class="kiss-box">
+      <button class="btn-primary" onclick="sendKiss()">
+        Send Virtual Kisses 💋
+      </button>
+      <div class="kiss-count" id="kissCount">
+        Virtual Kisses Sent: 0 😘
+      </div>
+    </section>
+
+    <footer>Made with 💖 just for your special day</footer>
+  </main>
+
+  <script>
+    // Floating Hearts, Strawberries, Bears & Sparkles Generator
+    const bg = document.getElementById("floatingBg");
+    const icons = ["💖", "🌸", "✨", "🍓", "🎀", "🧸", "💗", "🌷"];
+    for (let i = 0; i < 30; i++) {
+      const span = document.createElement("span");
+      span.className = "floating-item";
+      span.textContent = icons[i % icons.length];
+      span.style.left = Math.random() * 100 + "vw";
+      span.style.fontSize = 18 + Math.random() * 18 + "px";
+      span.style.animationDuration = 7 + Math.random() * 8 + "s";
+      span.style.animationDelay = Math.random() * 6 + "s";
+      bg.appendChild(span);
+    }
+
+    // Confetti Burst
+    function launchConfetti() {
+      if (typeof confetti === "function") {
+        confetti({
+          particleCount: 95,
+          spread: 80,
+          origin: { y: 0.6 },
+          colors: ["#ff5c97", "#ff8fb8", "#ffc2d9", "#ffd700", "#ffffff"]
+        });
+      }
+    }
+
+    window.addEventListener("load", () => {
+      setTimeout(launchConfetti, 500);
+    });
+
+    // Envelope Open/Close
+    let isLetterOpen = false;
+    function toggleLetter() {
+      const paper = document.getElementById("letterPaper");
+      const title = document.getElementById("envelopeTitle");
+      const hint = document.getElementById("envelopeHint");
+      isLetterOpen = !isLetterOpen;
+
+      if (isLetterOpen) {
+        paper.classList.add("open");
+        title.textContent = "Your Birthday Letter 💌";
+        hint.textContent = "Tap again to fold the letter";
+        launchConfetti();
+      } else {
+        paper.classList.remove("open");
+        title.textContent = "Tap to Open Your Birthday Letter";
+        hint.textContent = "Made with all my love just for you ✨";
+      }
+    }
+
+    // Virtual Kiss Counter
+    let kisses = 0;
+    function sendKiss() {
+      kisses++;
+      document.getElementById("kissCount").textContent =
+        `Virtual Kisses Sent: ${kisses} 😘💋`;
+      if (kisses % 5 === 0) launchConfetti();
+    }
+
+    // Synthesized Music-Box Happy Birthday Melody
+    let audioCtx = null;
+    let isPlaying = false;
+    let melodyTimer = null;
+
+    const notes = [
+      [261.63, 300], [261.63, 300], [293.66, 600], [261.63, 600], [349.23, 600], [329.63, 1100],
+      [261.63, 300], [261.63, 300], [293.66, 600], [261.63, 600], [392.00, 600], [349.23, 1100],
+      [261.63, 300], [261.63, 300], [523.25, 600], [440.00, 600], [349.23, 600], [329.63, 600], [293.66, 1100],
+      [466.16, 300], [466.16, 300], [440.00, 600], [349.23, 600], [392.00, 600], [349.23, 1200]
+    ];
+
+    function playNote(freq, duration) {
+      if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+      const osc = audioCtx.createOscillator();
+      const gain = audioCtx.createGain();
+      osc.type = "sine";
+      osc.frequency.value = freq;
+      gain.gain.setValueAtTime(0.14, audioCtx.currentTime);
+      gain.gain.exponentialRampToValueAtTime(0.001, audioCtx.currentTime + duration / 1000);
+      osc.connect(gain);
+      gain.connect(audioCtx.destination);
+      osc.start();
+      osc.stop(audioCtx.currentTime + duration / 1000);
+    }
+
+    function toggleMusic() {
+      const btn = document.getElementById("musicBtn");
+      if (isPlaying) {
+        isPlaying = false;
+        clearTimeout(melodyTimer);
+        btn.textContent = "🎵 Play Birthday Melody";
+        return;
+      }
+      isPlaying = true;
+      btn.textContent = "⏸️ Pause Melody";
+      let idx = 0;
+      function next() {
+        if (!isPlaying) return;
+        const [freq, dur] = notes[idx];
+        playNote(freq, dur);
+        idx = (idx + 1) % notes.length;
+        melodyTimer = setTimeout(next, dur + 80);
+      }
+      next();
+    }
+  </script>
+</body>
+</html>
